@@ -1,7 +1,7 @@
 # Introduction
 > Internet이란 무엇인가?
 
-Internet의 구조: core, edge
+Internet의 구조: core, edge<br/>
 hosts는 각각의 end systems
 
 Protocol은 communication을 조정하는 역할
