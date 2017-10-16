@@ -37,14 +37,16 @@ data를 전송하는 방식
 ## Packet Switching  
 독점하지 않고 '공유'해서 사용  
 지금의 방식은 Circuit Switching이 아닌 Packet Switching 방식을 사용  
-
-예제  
+'''
+<b>예제</b>
 1 Mb/s link가 존재  
 각 사용자가 활동할 때 100 kb/s  
 활동 시간의 10%   
+'''
 * circuit switching의 경우에는 예약해서 사용하기 때문에 10명의 사용자 가능  
 * packet switching의 경우에는 예약하지 않고 제한이 없기에 많은 사용자 이용 가능  
 
+<b>정리</b>
 circuit switching은 자원을 쓰지 않는 채 낭비될 가능성이 있고,  
 packet swithching은 자원을 너무 많이 사용해서 packet delay나 loss가 발생  
 e.g) 새벽에 league of legend를 이용할 때와 오후 시간에 league of legend 이용할 때  
