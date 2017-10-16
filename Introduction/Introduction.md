@@ -38,13 +38,13 @@ data를 전송하는 방식
 독점하지 않고 '공유'해서 사용  
 지금의 방식은 Circuit Switching이 아닌 Packet Switching 방식을 사용  
 ~~~~
-**예제**  
+예제1  
 1 Mb/s link가 존재  
 각 사용자가 활동할 때 100 kb/s  
 활동 시간의 10%   
-~~~~
+~~~~  
 * circuit switching의 경우에는 예약해서 사용하기 때문에 10명의 사용자 가능  
-* packet switching의 경우에는 예약하지 않고 제한이 없기에 많은 사용자 이용 가능  
+* packet switching의 경우에는 예약하지 않고 제한이 없기에 많은 사용자 이용 가능    
 
 **정리**  
 circuit switching은 자원을 쓰지 않는 채 낭비될 가능성이 있고,  
