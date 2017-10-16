@@ -37,16 +37,33 @@ data를 전송하는 방식
 ## Packet Switching  
 독점하지 않고 '공유'해서 사용  
 지금의 방식은 Circuit Switching이 아닌 Packet Switching 방식을 사용  
-~~~~
-예제1  
+'''
+<b>예제</b>
 1 Mb/s link가 존재  
 각 사용자가 활동할 때 100 kb/s  
-활동 시간의 10%   
-~~~~  
+활동 시간의 10%
+'''
 * circuit switching의 경우에는 예약해서 사용하기 때문에 10명의 사용자 가능  
-* packet switching의 경우에는 예약하지 않고 제한이 없기에 많은 사용자 이용 가능    
+* packet switching의 경우에는 예약하지 않고 제한이 없기에 많은 사용자 이용 가능  
 
-**정리**  
+<b>정리</b>  
 circuit switching은 자원을 쓰지 않는 채 낭비될 가능성이 있고,  
 packet swithching은 자원을 너무 많이 사용해서 packet delay나 loss가 발생  
 e.g) 새벽에 league of legend를 이용할 때와 오후 시간에 league of legend 이용할 때  
+
+# Internet structure: network of networks  
+
+# Packet의 loss와 delay는 왜 발생할까?  
+<b>Router buffer 안에 있는 packet들의 queue</b>  
+※ 들어오는 속도가 나가는 속도보다 빠를 때 queueing 현상 발생!  
+
+## Four sources of packet delay  
+* nodal processing  
+packet이 처음 들어왔을 때 처리 과정  
+* queueing(variable)  
+전송을 위해 output link에서 기다리는 시간  
+* transmission delay  
+bit를 link로 보내는 데 걸리는 시간  
+e.g) 파이프에 물을 붓는 과정  
+* propagation delay   
+실제 거리를 빛의 속도로 나눈 시간  
