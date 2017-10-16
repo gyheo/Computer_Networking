@@ -45,6 +45,6 @@ data를 전송하는 방식
 * circuit switching의 경우에는 예약해서 사용하기 때문에 10명의 사용자 가능  
 * packet switching의 경우에는 예약하지 않고 제한이 없기에 많은 사용자 이용 가능  
 
-circuit switching은 자원을 사용하지 않아 자원이 낭비될 가능성이 있고,  
+circuit switching은 자원을 쓰지 않는 채 낭비될 가능성이 있고,  
 packet swithching은 자원을 너무 많이 사용해서 packet delay나 loss가 발생  
 e.g) 새벽에 league of legend를 이용할 때와 오후 시간에 league of legend 이용할 때  
