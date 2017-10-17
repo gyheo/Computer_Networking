@@ -1,0 +1,3 @@
+# Application Layer  
+Application Layer에는 다양한 Protocol이 존재  
+e.g) FTP, HTTP, SMTP, IMAP, POP3 ...  
