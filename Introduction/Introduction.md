@@ -38,7 +38,7 @@ data를 전송하는 방식
 독점하지 않고 '공유'해서 사용  
 지금의 방식은 Circuit Switching이 아닌 Packet Switching 방식을 사용  
 ~~~~
-<b>예제</b>
+예제
 1 Mb/s link가 존재  
 각 사용자가 활동할 때 100 kb/s  
 활동 시간의 10%
