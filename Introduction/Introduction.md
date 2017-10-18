@@ -74,10 +74,13 @@ Caravan analogy 문제 - 이해하기에 좋은 듯
 * 우리가 줄일 수 있는 요소 - queueing delay  
 * processing delay는 좋은 CPU를 사용하면 줄일 수 있고  
 * transmission delay는 좋은 cable 사용하면 줄일 수 있다  
-* Packet Loss는 유한한 용량을 넘게 되면서 발생하는 현상
+* Packet Loss는 유한한 용량을 넘게 되면서 발생하는 현상  
 
+~~~~
+* Question
 Q) 재전송은 누가 해줄까?  
 A) router들이 아닌 sender (TCP 차원)    
+~~~~  
 
 ~~~~
 예제3  
@@ -98,4 +101,4 @@ transport ← segment
 network ← datagram  
 link ← frame  
 
-end point  
+<b>*end point*</b>  
