@@ -35,10 +35,10 @@ data를 전송하는 방식
 ## Circuit Switching  
 쉽게 표현하면 예약  
 ## Packet Switching  
-독점하지 않고 '공유'해서 사용  
+독점하지 않고 '공유'해서 사용
 지금의 방식은 Circuit Switching이 아닌 Packet Switching 방식을 사용  
 ~~~~
-예제
+예제1
 1 Mb/s link가 존재  
 각 사용자가 활동할 때 100 kb/s  
 활동 시간의 10%
@@ -67,3 +67,35 @@ bit를 link로 보내는 데 걸리는 시간
 e.g) 파이프에 물을 붓는 과정  
 * propagation delay   
 실제 거리를 빛의 속도로 나눈 시간  
+~~~~
+예제2  
+Caravan analogy 문제 - 이해하기에 좋은 듯
+~~~~
+* 우리가 줄일 수 있는 요소 - queueing delay  
+* processing delay는 좋은 CPU를 사용하면 줄일 수 있고  
+* transmission delay는 좋은 cable 사용하면 줄일 수 있다  
+* Packet Loss는 유한한 용량을 넘게 되면서 발생하는 현상
+
+Q) 재전송은 누가 해줄까?  
+A) router들이 아닌 sender (TCP 차원)    
+
+~~~~
+예제3  
+windows cmd에서 tracert 실행해보기
+~~~~  
+
+# * Layering  
+> Networks are Complex!  
+
+네트워크 자체가 복잡하기 때문에 '관리'하기 쉽도록 무언가의 조치가 필요하다!  
+*Internet Protocol Stack*  
+
+# Encapsulation  
+Internet Protocol Stack에서 각각의 layer를 지나갈때마다 header 추가  
+각 layer 영역에서의 packet 이름을 알아두자  
+application ← message  
+transport ← segment  
+network ← datagram  
+link ← frame  
+
+end point  
