@@ -108,4 +108,59 @@ server는 response에 object들을 실어서 client에게 response 전송
 * persistent HTTP  
 ** 여러 개 object를 하나의 TCP connection을 통해 전송 like pipeline  
 ** 요즘 사용하는 HTTP는 persistent HTTP  
-** 우선 2RTT에 TCP connection은 일정 시간동안 열려있으므로 non-persistent와는 다르게 좀 더 TCP 징검다리를 활용할 수 있음  
+** 우선 2RTT에 TCP connection은 일정 시간동안 열려있으므로 non-persistent와는  
+다르게 좀 더 TCP '징검다리'를 활용할 수 있음  
+
+# Two types of HTTP messages :
+* request  
+* response  
+* HTTP request message : ASCII(human-readable format)  
+
+# * Uploading form input  
+* POST method  
+* * input is uploaded to server in entity body  
+* GET method  
+* * input is uploaded in URL field of request line:  
+
+~~~~  
+Q) HTTP는 statless인데 그러면 어떻게 상태 정보를 저장하지?  
+A) By cookie  
+~~~~  
+
+# Cookies: keeping "state"  
+1. client가 http request message를 전송
+2. 만약 server에 해당 사용자의 정보가 없으면 header cookie 정보를 넣어 전달  
+3. 시간이 지나도 cookie를 client가 가지고 있으면  
+server "또 왔어? 널 위해 준비했어.." 하면서 service 제공  
+
+## Cookie의 사용 목적
+* authorization
+* shopping carts
+* recommendations
+* user session state(Web email)
+
+정리: 여러 web site들은 cookie를 바탕으로 사용자 pattern 분석  
+(Big Data, Data Analysis)  
+
+
+# Web caches (proxy server)  
+* <b>Goal : satisfy client request without involving origin server</b>  
+* <b>Computer Science에서 정말로 중요한 Chaching 개념</b>  
+~~~~  
+why Web caching?
+1. client의 response time ↓  
+2. access link의 traffic을 줄여준다 (해외로 나가는 traffic은 $)  
+3. content provider 역할도 감당
+~~~~  
+
+~~~~  
+예제)  
+Caching example
+e.g) 학교 기숙사에서 Google 해외 망으로 나가는 상황을 가정하고 생각해보기  
+~~~~  
+
+~~~~  
+Q) proxy server의 문제점은 없을까?  
+A) up-to-date file을 놓칠 수 있다. 그래서 특정 날짜의 파일에 대해 변화가 있을 경우  
+up-to-date file을 새로 요청해서 받아온다
+~~~~  
