@@ -99,16 +99,16 @@ server는 response에 object들을 실어서 client에게 response 전송
 
 # * HTTP connections  
 * non-persistent HTTP  
-** 각각의 object마다 일일이 TCP connection 생성  
-** object도 많아지면 TCP connection도 많아지기 때문에 overhead  
-** 최소 2RTT + file transmission time (각각의 object 파일에 대해)  
+  * 각각의 object마다 일일이 TCP connection 생성  
+  * object도 많아지면 TCP connection도 많아지기 때문에 overhead  
+  * 최소 2RTT + file transmission time (각각의 object 파일에 대해)  
 
-> * RTT(Round Trip Time) : Packet을 보내고 ACK을 받기까지의 시간 (왕복시간)  
+## * RTT(Round Trip Time) : Packet을 보내고 ACK을 받기까지의 시간 (왕복시간)  
 
 * persistent HTTP  
-** 여러 개 object를 하나의 TCP connection을 통해 전송 like pipeline  
-** 요즘 사용하는 HTTP는 persistent HTTP  
-** 우선 2RTT에 TCP connection은 일정 시간동안 열려있으므로 non-persistent와는  
+  * 여러 개 object를 하나의 TCP connection을 통해 전송 like pipeline  
+  * 요즘 사용하는 HTTP는 persistent HTTP  
+  * 우선 2RTT에 TCP connection은 일정 시간동안 열려있으므로 non-persistent와는  
 다르게 좀 더 TCP '징검다리'를 활용할 수 있음  
 
 # Two types of HTTP messages :
