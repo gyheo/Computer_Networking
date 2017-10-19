@@ -92,7 +92,20 @@ e.g) www.someschool.com (여기까지 host name) / someDept/pic.gif(path name)
 e.g) http://www.google.com  
 * client는 server에게 request를 날리고,  
 server는 response에 object들을 실어서 client에게 response 전송  
-* * HTTP request, response를 주고 받기 위해서는 TCP connection이 필요  
-* * <b>HTTP uses TCP</b>, 처음에 클라이언트가 TCP 연결 (port# 80)  
-* * <b>HTTP is "stateless"</b>, 서버는 클라이언트 request의 정보를 기억하지 않는다  
-* (server가 일일이 다 기억하면 server에게 부담 ↑)
+* <b>(중요)</b> HTTP request, response를 주고 받기 위해서는 TCP connection이 필요  
+* <b>(중요)</b> <b>HTTP uses TCP</b>, 처음에 클라이언트가 TCP 연결 (port# 80)  
+* <b>(중요)</b> <b>HTTP is "stateless"</b>, 서버는 클라이언트 request의 정보를 기억하지 않는다  
+* (server가 일일이 다 기억하면 server에게 부담 ↑)  
+
+# * HTTP connections  
+* non-persistent HTTP  
+** 각각의 object마다 일일이 TCP connection 생성  
+** object도 많아지면 TCP connection도 많아지기 때문에 overhead  
+** 최소 2RTT + file transmission time (각각의 object 파일에 대해)  
+
+> * RTT(Round Trip Time) : Packet을 보내고 ACK을 받기까지의 시간 (왕복시간)  
+
+* persistent HTTP  
+** 여러 개 object를 하나의 TCP connection을 통해 전송 like pipeline  
+** 요즘 사용하는 HTTP는 persistent HTTP  
+** 우선 2RTT에 TCP connection은 일정 시간동안 열려있으므로 non-persistent와는 다르게 좀 더 TCP 징검다리를 활용할 수 있음  
