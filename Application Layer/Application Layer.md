@@ -118,9 +118,9 @@ server는 response에 object들을 실어서 client에게 response 전송
 
 # * Uploading form input  
 * POST method  
-* * input is uploaded to server in entity body  
+  * input is uploaded to server in entity body  
 * GET method  
-* * input is uploaded in URL field of request line:  
+  * input is uploaded in URL field of request line:  
 
 ~~~~  
 Q) HTTP는 statless인데 그러면 어떻게 상태 정보를 저장하지?  
