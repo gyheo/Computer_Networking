@@ -175,4 +175,20 @@ up-to-date file을 새로 요청해서 받아온다
 * FTP 서버는 사용자에 대한 정보 유지 (not stateless)  
 
 # Electronic mail  
+
+## Electronic mail: mail servers  
+* mail servers:  
+  * mailbox는 incoming message를 위한 공간  
+  * message queue는 곧 보낼 mail message를 위한 공간  
+  * SMTP protocol은 mail server간의 메일을 보내기 위해 사용되는 protocol  
+
+## Electronic Mail:SMTP [RFC 2821]  
+* uses TCP (for reliable transfer)  
+* direct transfer : sending server to receiving server  
+* HTTP는 pull, SMTP는 push  
+
+## Mail access protocols  
+* POP3 : "download and delete"  
+* IMAP : "keep all messages in one place: at server"  
+
 <b>*the end point*</b>  
