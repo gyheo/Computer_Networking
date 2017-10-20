@@ -164,3 +164,5 @@ Q) proxy server의 문제점은 없을까?
 A) up-to-date file을 놓칠 수 있다. 그래서 특정 날짜의 파일에 대해 변화가 있을 경우  
 up-to-date file을 새로 요청해서 받아온다
 ~~~~  
+
+<b>*the end point*</b>  
