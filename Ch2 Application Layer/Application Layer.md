@@ -165,4 +165,14 @@ A) up-to-date file을 놓칠 수 있다. 그래서 특정 날짜의 파일에 �
 up-to-date file을 새로 요청해서 받아온다
 ~~~~  
 
+# FTP: the file transfer protocol[RFC 959]  
+* 클라이언트는 21번 port로 server와 TCP <b>control</b> connection 성립  
+(위의 TCP connection을 이용해서 클라이언트는 디렉토리 검색)  
+* 서버가 파일 전송의 명령을 받았을때 2nd TCP <b>data</b> connection을 open  
+(파일 송수신을 마치면 data connection은 close)  
+* <b>out-of-band</b>  
+(port#21는 Control 역할, port#20은 Data 역할)  
+* FTP 서버는 사용자에 대한 정보 유지 (not stateless)  
+
+# Electronic mail  
 <b>*the end point*</b>  
