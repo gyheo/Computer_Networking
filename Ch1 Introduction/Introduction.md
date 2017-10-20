@@ -101,4 +101,4 @@ transport ← segment
 network ← datagram  
 link ← frame  
 
-<b>*end point*</b>  
+<b>*the end point*</b>  
