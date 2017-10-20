@@ -13,6 +13,7 @@ Goal : provide logical communicaiton
   * connection setup  
 
 * unreliable, unordered delivery: UDP   
+  * 많은 기능을 제공하지 않음 (가벼움)  
 
 # * Multiplexing/demultiplexing  
 * Multiplexing  
@@ -27,6 +28,31 @@ Goal : provide logical communicaiton
   (dest IP address, dest port #)  
 
 # UDP: User Datagram Protocol [RFC 768]  
+* "no frills" "bare bones" Internet transport protocol  
+* "best effort" service, UDP segments may be:
+  * lost
+  * delivered out of order to app  
+* <b>connectionless</b>:
+  * no handshaking between UDP sender, receiver  
+
+~~~~
+Q) 왜 UDP를 사용하는가?  
+* no connection establishment → delay 감소 효과  
+* simple: no connection state at sender, receiver  
+* header가 단순하고 크기가 작음  
+* <b>no congestion control</b>  
+~~~~  
+
+## UDP: more  
+* 주로 multimedia streaming application에서 사용
+  * loss tolerant  
+  * rate sensitive  
+
+* other UDP uses  
+  * DNS  
+  * SNMP  
+
+* error 확인을 위한 checksum 기능 제공 in header (16 bit)  
 
 
 
