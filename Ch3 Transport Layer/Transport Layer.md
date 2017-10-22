@@ -90,5 +90,25 @@ A) ACK 혹은 NACK에서 error가 발생하는 경우에는..?
 결과적으로 <b> duplicated packet이 도착할 가능성이 생김 </b>  
 ~~~~
 
+# 중복되는 packet 처리 (rdt2.0 문제점 극복)   
+* sender 측에서 각 packet에 <b>sequence number</b> 추가  
+* ACK 혹은 NAK이 왜곡된 경우 sender에서 retransmit  
+* receiver의 경우 duplicate packet은 버린다  
+
+# rdt2.1: packet error
+* sender
+  * packet에 seq # 추가  
+  * 받은 ACK/NAK이 왜곡되었는지 반드시 확인  
+  * NAK 혹은 왜곡된 ACK에 대해 retransmit  
+
+* receiver  
+  * packet이 duplicate 되었는지 반드시 확인  
+  * 받은 packet이 잘못된 겨우 NAK 전송  
+
+# rdt2.2: a NAK-free protocol  
+* rdt2.1과 비슷하지만 using ACKs only  
+* NAK 대신 ACK # 마지막에 제대로 받은 number 표시  
+* Duplicated ACK이 오는 경우에는 NAK을 받고 재전송하듯이 행동  
+
 
 <b>*the end point*</b>  
