@@ -54,6 +54,14 @@ Q) 왜 UDP를 사용하는가?
 
 * error 확인을 위한 checksum 기능 제공 in header (16 bit)  
 
+~~~~
+Q) unreliable한 상황에서 발생할 수 있는 문제에 뭐가 있을까?
+A) Message error, Message loss  
+~~~~  
+
+# Let's Build simple Reliable Data Transfer Protocol!  
+## TCP 설계를 위한 RDT version series  
+
 
 
 <b>*the end point*</b>  
