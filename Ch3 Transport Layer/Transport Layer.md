@@ -61,7 +61,34 @@ A) Message error, Message loss
 
 # Let's Build simple Reliable Data Transfer Protocol!  
 ## TCP 설계를 위한 RDT version series  
+* incrementally develop sender, receiver sides of reliable  
+data transfer protocol (rdt)
 
+# Rdt1.0: Data Transfer over a Perfect Channel  
+* Perfectly reliable (진공상태?)
+  * no packet errors  
+  * no packet loss  
+* Underlying channel is reliable!  
+
+# Rdt2.0: Channel with packet errors (no loss)  
+* error를 방지하기위한 방법에 무엇이 있을까?
+  * Error detection  
+    * checksum bit 추가
+
+  * Feedback
+    * (중요) Acknowledgements (ACKS) : receiver측에서 "잘 받았어!" 라고  
+    명시적으로 sender에게 알려줌  
+    * Negative acknoledgements (NAKs) : receiver측에서 "패킷 error 있어!" 라고  
+    명시적으로 sender에게 알려줌
+
+  * Retransmission  
+    * sender가 NAK에 대응하는 packet을 재전송  
+
+~~~~
+Q) rdt2.0: error를 완벽히 처리할 수 있을까?  
+A) ACK 혹은 NACK에서 error가 발생하는 경우에는..?  
+결과적으로 <b> duplicated packet이 도착할 가능성이 생김 </b>  
+~~~~
 
 
 <b>*the end point*</b>  
