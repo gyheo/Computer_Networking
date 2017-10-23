@@ -87,7 +87,7 @@ data transfer protocol (rdt)
 ~~~~
 Q) rdt2.0: error를 완벽히 처리할 수 있을까?  
 A) ACK 혹은 NACK에서 error가 발생하는 경우에는..?  
-결과적으로 <b> duplicated packet이 도착할 가능성이 생김 </b>  
+결과적으로 duplicated packet이 도착할 가능성이 생김
 ~~~~
 
 # 중복되는 packet 처리 (rdt2.0 문제점 극복)   
@@ -128,10 +128,22 @@ A) ACK 혹은 NACK에서 error가 발생하는 경우에는..?
   * Real-world protocol (e.g., TCP) is more complex,  
   but with same principles!  
 
+# Performance of rdt3.0; 신뢰성 보장  
+* performance stinks because of <b>stop-and-wait operation</b>  
+* e.g., 고속도로 16차선에 차 1대만 있는 상황  
 
+# Pipelined protocols  
+* Pipelining : sender allows multiple, "in-flight", yet-to-be-  
+acknowledged pkts  
+  * seq # 증가  
+  * buffering at sender and/or receiver  
 
+  * Two generic forms of pipelined protocols:  
+  (방식이 아닌 Approach)
+    * (중요) go-Back-N
+    * (중요) selective repeat
 
-
+# Pipelining: increased utilization  
 
 
 <b>*the end point*</b>  
