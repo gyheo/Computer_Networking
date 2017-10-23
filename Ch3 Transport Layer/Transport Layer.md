@@ -110,5 +110,28 @@ A) ACK 혹은 NACK에서 error가 발생하는 경우에는..?
 * NAK 대신 ACK # 마지막에 제대로 받은 number 표시  
 * Duplicated ACK이 오는 경우에는 NAK을 받고 재전송하듯이 행동  
 
+# rdt3.0: <b>channel with loss</b> & packet errors  
+* packet loss가 발생했을 때 어떤 mechanisms을 취할 것인가?  
+  * 보낼때마다 Timer  
+* sender는 ACK을 "적절하게" 시간을 가지고 기다림  
+* 만약에 packet (혹은 ACK)이 지연되는 경우 (not loss) :  
+  * retransmission은 중복되지만 seq. #로 조절 가능 (중복된 packet은 discard)  
+
+## Recap: Principles of Reliable Data Transfer  
+* unreliable channel에서 발생할 수 있는 문제
+  * (중요) packet error, packet loss  
+* packet error 대처 방법  
+  * Error detection, feedback, retransmission, sequence #  
+* packet loss 대처 방법  
+  * Timeout!  
+* (중요) We build simple reliable data transfer protocol  
+  * Real-world protocol (e.g., TCP) is more complex,  
+  but with same principles!  
+
+
+
+
+
+
 
 <b>*the end point*</b>  
