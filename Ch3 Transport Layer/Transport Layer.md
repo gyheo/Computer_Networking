@@ -144,6 +144,9 @@ acknowledged pkts
     * (중요) selective repeat
 
 # Pipelining: increased utilization  
+> 기존의 stop-and-wait의 방식을 단점을 극복하기 위한 방법
 
-
+# Go-Back-N  
+* 쏟아부을것이다, 얼만큼? by window  
+* (중요) cumulative ACK 이용  
 <b>*the end point*</b>  
