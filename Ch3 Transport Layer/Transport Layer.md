@@ -149,4 +149,14 @@ acknowledged pkts
 # Go-Back-N  
 * 쏟아부을것이다, 얼만큼? by window  
 * (중요) cumulative ACK 이용  
+e.g., "ACK 11, 나 11번까지는 완벽히 잘 받았어"  
+* (중요) loss가 발생한 이후부터 받은 pkt은 discard, 최근까지 받은 pkt ACK 전송  
+* timer 터지는 순간 재전송  
+* 하나 loss발생해서 다른 것도 다 버리는.. (비효율적인 측면 有)  
+
+# Selective Repeat  
+* receiver가 받은 모든 packet에 대해 일일이 ACK  
+* sender는 오로지 ACK을 받지 않은 pkt들에 대해 재전송  
+* receiver는 받은 패킷을 갖고 있어야한다 (receive buffering)
+
 <b>*the end point*</b>  
