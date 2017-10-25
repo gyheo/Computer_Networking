@@ -157,6 +157,18 @@ e.g., "ACK 11, 나 11번까지는 완벽히 잘 받았어"
 # Selective Repeat  
 * receiver가 받은 모든 packet에 대해 일일이 ACK  
 * sender는 오로지 ACK을 받지 않은 pkt들에 대해 재전송  
-* receiver는 받은 패킷을 갖고 있어야한다 (receive buffering)
+* receiver는 packet을 갖고 있어야 할 공간 필요 (receive buffer 有)  
+* Each timer
+## (중요) Selective repeat in action 동작 익히기  
+
+## Selective repeat: dilemma  
+* seq # 의 한계  
+(receiver측에서의 착각)  
+* Solution : 0, 1, 2, 3, 4, 5, 6 seq# 늘리기  
+(새로운 packet과 duplicated 구분)  
+
+# * (중요) TCP: Overview
+
+
 
 <b>*the end point*</b>  
