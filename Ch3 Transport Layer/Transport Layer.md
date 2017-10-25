@@ -158,7 +158,14 @@ e.g., "ACK 11, 나 11번까지는 완벽히 잘 받았어"
 * receiver가 받은 모든 packet에 대해 일일이 ACK  
 * sender는 오로지 ACK을 받지 않은 pkt들에 대해 재전송  
 * receiver는 packet을 갖고 있어야 할 공간 필요 (receive buffer 有)  
-* Each timer
+* Each timer  
+
+~~~~  
++plus)
+Q) receive buffer만 존재하는가?
+A) 당연히 send buffer도 존재!
+~~~~  
+
 ## (중요) Selective repeat in action 동작 익히기  
 
 ## Selective repeat: dilemma  
