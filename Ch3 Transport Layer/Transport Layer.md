@@ -193,4 +193,6 @@ one sender, one receiver(프로세스와 프로세스)
 * flow controlled:  
   * sender는 receiver의 상태를 고려해서  
   e.g.,  sender는 슈퍼 컴퓨터, receiver는 386 컴퓨터  
+
+  
 <b>*the end point*</b>  
