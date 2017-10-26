@@ -175,7 +175,22 @@ A) 당연히 send buffer도 존재!
 (새로운 packet과 duplicated 구분)  
 
 # * (중요) TCP: Overview
-
-
-
+* point-to-point:  
+one sender, one receiver(프로세스와 프로세스)  
+  * socket 한 쌍 끼리    
+* reliable, in-order byte stream  
+  * "하나도 유실되지 않고 순서대로 간다"  
+* pipelined:  
+  * TCP congestion and flow control set window size  
+* (중요) send & receive buffers  
+  * window 자체가 buffer  
+  * receive buffer : out-of-order 자유롭게 잘 저장하기 위해  
+* full duplex data:
+  * bi-directional data flow in same connection  
+  * MSS : maximum segment size  
+* connection-oriented  
+  * handshaking  
+* flow controlled:  
+  * sender는 receiver의 상태를 고려해서  
+  e.g.,  sender는 슈퍼 컴퓨터, receiver는 386 컴퓨터  
 <b>*the end point*</b>  
