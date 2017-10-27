@@ -194,5 +194,16 @@ one sender, one receiver(프로세스와 프로세스)
   * sender는 receiver의 상태를 고려해서  
   e.g.,  sender는 슈퍼 컴퓨터, receiver는 386 컴퓨터  
 
+# (중요) TCP segment structure  
+* Protocol은 hdr가 有  
+
+# TCP seq. #'s and  ACKs  
+* Seq. #'s:
+  * byte stream "number" of first byte in segment's data  
+* ACKs:  
+  * seq # of next byte expected from other side  
+  * (중요) cumulative ACK  
+    e,g,. ACK 10, receiver 曰 "10번 내놔!"  
   
+
 <b>*the end point*</b>  
