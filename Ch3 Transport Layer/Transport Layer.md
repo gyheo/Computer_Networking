@@ -204,6 +204,7 @@ one sender, one receiver(프로세스와 프로세스)
   * seq # of next byte expected from other side  
   * (중요) cumulative ACK  
     e,g,. ACK 10, receiver 曰 "10번 내놔!"  
-  
+
+# Timeout -- funtion of RTT  
 
 <b>*the end point*</b>  
