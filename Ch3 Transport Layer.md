@@ -206,5 +206,7 @@ one sender, one receiver(프로세스와 프로세스)
     e,g,. ACK 10, receiver 曰 "10번 내놔!"  
 
 # Timeout -- funtion of RTT  
-
+* Timer의 시간 어떻게 정하지?  
+* 네트워크 환경이 계속해서 실시간으로 변함에 따라,  
+RTT도 계속 바뀔 수 有  
 <b>*the end point*</b>  
