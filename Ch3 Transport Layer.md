@@ -183,8 +183,9 @@ one sender, one receiver(프로세스와 프로세스)
 * pipelined:  
   * TCP congestion and flow control set window size  
 * (중요) send & receive buffers  
-  * window 자체가 buffer  
-  * receive buffer : out-of-order 자유롭게 잘 저장하기 위해  
+  * 내보내기 전 buffer  
+  * 내보낼 때 buffer에 있는 packet들을 cwnd 크기만큼 내보낸다  
+  * receive buffer : out-of-order, 순서대로 도착하지 않았을 때 reordering을 위해      
 * full duplex data:
   * bi-directional data flow in same connection  
   * MSS : maximum segment size  
