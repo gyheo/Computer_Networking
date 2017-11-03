@@ -20,3 +20,5 @@
 
 
 <b>*the end point*</b>  
+
+# IP datagram format  
