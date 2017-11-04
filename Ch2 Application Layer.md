@@ -192,5 +192,5 @@ up-to-date file을 새로 요청해서 받아온다
 * IMAP : "keep all messages in one place: at server"  
 
 # DNS(Domain Name Server)  
-
+* Hierarchical structure
 <b>*the end point*</b>  
