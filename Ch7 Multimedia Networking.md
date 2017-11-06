@@ -21,5 +21,9 @@
 * <b>streaming live</b> audio, video
   * server에 저장된 게 X  
 
+# Streaming stored video: (graph 확인)  
+  * (중요) network delay : 유동적, 일정하지않다; jitter  
+  * 위의 buffering이 길어지면 사용자에게 불편함 ㅡ_ㅡ  (YouTube의 경우)  
+
 
 <b>*the end point*</b>   
