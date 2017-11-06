@@ -51,5 +51,12 @@ A1) 억 단위의 동시 접속자 수
 Q2) 그럼 YouTube server 힘들텐데 어떻게 해결하지?  
 A2) 우아하게 아름다운 Multicast (중간에서 찢어 나눠주는 but 현실적으로 구현 어려움)  
   So, Content Delivery Network; CDN을 이용  
-~~~~
+~~~~  
+
+# (중요) Content Delivery Network (CDN)  
+  * 어떻게 사용자에게 가까운 CDN으로 request할 수 있을까?  
+  * 패킷 열어서 IP 확인한 다음 근처 CDN으로, CDN domain name의 IP주소 확인할 때 DNS에게 물어본다 (처음에 local name server 확인하고 없으면 쭉쭉 따라가서 결과적으로 authorative dns server에게 물어보겠지)  
+  * CDN을 어디에 설치하는 게 좋을까?  
+  * 사용자 hop수에 가깝도록 access network 안에 CDN을 '딱' 설치  
+
 <b>*the end point*</b>   
