@@ -44,5 +44,12 @@
       * bandwidth가 좋을 때는 1080p를 요청할 수 있고,  
       * bandwidth가 좋지 않을 때에는 144p 요청할 수도 있음  
 
+~~~~  
+Q1) YouTube의 현재 사용자 수?  
+A1) 억 단위의 동시 접속자 수    
 
+Q2) 그럼 YouTube server 힘들텐데 어떻게 해결하지?  
+A2) 우아하게 아름다운 Multicast (중간에서 찢어 나눠주는 but 현실적으로 구현 어려움)  
+  So, Content Delivery Network; CDN을 이용  
+~~~~
 <b>*the end point*</b>   
