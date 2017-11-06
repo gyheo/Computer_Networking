@@ -14,5 +14,12 @@
 * digital image : array of pixels  
 * encoding rate이 높을수록 고화질  
 
+# Multimedia networking: 3 application types  
+* streaming, stored audio, video  
+  * streaming
+  * e.g., YouTube, Netflix, Hulu
+* <b>streaming live</b> audio, video
+  * server에 저장된 게 X  
+
 
 <b>*the end point*</b>   
