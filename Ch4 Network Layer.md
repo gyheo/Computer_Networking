@@ -29,5 +29,3 @@ A) 20 bytes of TCP, 20 bytes of IP = 40 bytes + app layer overhead!
 
 
 <b>*the end point*</b>  
-
-# IP datagram format  
