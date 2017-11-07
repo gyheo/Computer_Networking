@@ -210,4 +210,13 @@ one sender, one receiver(프로세스와 프로세스)
 * Timer의 시간 어떻게 정하지?  
 * 네트워크 환경이 계속해서 실시간으로 변함에 따라,  
 RTT도 계속 바뀔 수 有  
+
+~~~~
+Q) RTT estimation은 어떻게 이루어질까?  
+A) Exponential Weighted Moving Average 이용  
+(과거 값을 많이 반영할 지, 현재 값을 많이 반영할 지는 a에 의해 결정)  
+~~~~  
+
+* 예측한 RTT 값과 표준편차값을 이용해서 Timer의 value도 결정  
+
 <b>*the end point*</b>  
