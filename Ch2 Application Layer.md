@@ -216,4 +216,8 @@ A) single point 하나 망가지면 chaos 상태
 * cached entries들은 out-of-date  
   (유효기간이 지나는 경우 새로운 정보를 가져 옴 by local DNS server)  
 
+# DNS records  
+* Resoucre Records format (RR) : (name, value, type, ttl)  
+* type=A : name은 hostname, value는 IP address  
+
 <b>*the end point*</b>  
