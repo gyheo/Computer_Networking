@@ -191,6 +191,6 @@ up-to-date file을 새로 요청해서 받아온다
 * POP3 : "download and delete"  
 * IMAP : "keep all messages in one place: at server"  
 
-# DNS(Domain Name Server)  
+# (중요) DNS(Domain Name Server)  
 * Hierarchical structure
 <b>*the end point*</b>  
