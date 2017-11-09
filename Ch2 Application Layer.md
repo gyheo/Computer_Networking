@@ -212,5 +212,8 @@ A) single point 하나 망가지면 chaos 상태
 * 궃은 일을 도맡아 하는 server  
 * Root, TLD, Authoritative 다 돌아다니기엔 귀찮을 수도 있으니깐..  
 
-# DNS name resolution example  
+# DNS name resolution example ; iterated query, recursive query  
+* cached entries들은 out-of-date  
+  (유효기간이 지나는 경우 새로운 정보를 가져 옴 by local DNS server)  
+
 <b>*the end point*</b>  
