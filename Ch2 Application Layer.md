@@ -208,4 +208,9 @@ A) single point 하나 망가지면 chaos 상태
 * Authoritative DNS Servers  
 
 # (중요) Local DNS name server  
+* proxy server와 비슷한 원리  
+* 궃은 일을 도맡아 하는 server  
+* Root, TLD, Authoritative 다 돌아다니기엔 귀찮을 수도 있으니깐..  
+
+# DNS name resolution example  
 <b>*the end point*</b>  
