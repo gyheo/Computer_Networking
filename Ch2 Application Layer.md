@@ -191,6 +191,21 @@ up-to-date file을 새로 요청해서 받아온다
 * POP3 : "download and delete"  
 * IMAP : "keep all messages in one place: at server"  
 
-# (중요) DNS(Domain Name Server)  
-* Hierarchical structure
+# (중요) DNS(Domain Name Server) : domain name system  
+* 사람이 보기 편한 Domain name e.g., www.abc.xy.kr  
+* 컴퓨터가 이해하기 편한 IP address e.g., 12.34.56.78  
+* DNS service : hostname을 IP address로 변환!  
+
+~~~~
+Q) 왜 DNS를 centralize하지 않을까?  
+A) single point 하나 망가지면 chaos 상태  
+그리고, 하나의 서버로부터 거리가 멀다면...  
+~~~~  
+
+# DNS: a distributed, hierarchical database  
+* Root DNS Servers (전 세계 여러군데 ... )  
+* TLD DNS Servers (.com DNS Servers, .org DNS Servers, edu DNS Servers)  
+* Authoritative DNS Servers  
+
+# (중요) Local DNS name server  
 <b>*the end point*</b>  
