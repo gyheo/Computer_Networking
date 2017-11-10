@@ -211,6 +211,16 @@ one sender, one receiver(프로세스와 프로세스)
 * 네트워크 환경이 계속해서 실시간으로 변함에 따라,  
 RTT도 계속 바뀔 수 有  
 
+# TCP : reliable data transfer  
+* 지금까지 배웠던 Approach 적용  
+* Pipelined segments  
+* Cumulative ACKs  
+* TCP는 single retransmission timer 사용  
+(GBN의 경우 window의 내용 모두 재전송)  
+
+* Retransmission이 발생하는 경우  
+  * timeout event 발생  
+  * duplicate acks  
 ~~~~
 Q) RTT estimation은 어떻게 이루어질까?  
 A) Exponential Weighted Moving Average 이용  
