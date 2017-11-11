@@ -229,4 +229,6 @@ A) Exponential Weighted Moving Average 이용
 
 * 예측한 RTT 값과 표준편차값을 이용해서 Timer의 value도 결정  
 
+# Congestion Control  
+
 <b>*the end point*</b>  
