@@ -204,12 +204,20 @@ one sender, one receiver(프로세스와 프로세스)
 * ACKs:  
   * seq # of next byte expected from other side  
   * (중요) cumulative ACK  
-    e,g,. ACK 10, receiver 曰 "10번 내놔!"  
+    e,g,. ACK 10, receiver 曰 (알아두기) "10번 내놔!"  
 
 # Timeout -- funtion of RTT  
 * Timer의 시간 어떻게 정하지?  
 * 네트워크 환경이 계속해서 실시간으로 변함에 따라,  
 RTT도 계속 바뀔 수 有  
+
+~~~~
+Q) RTT estimation은 어떻게 이루어질까?  
+A) Exponential Weighted Moving Average 이용  
+(과거 값을 많이 반영할 지, 현재 값을 많이 반영할 지는 a에 의해 결정)  
+~~~~  
+
+* 예측한 RTT 값과 표준편차값을 이용해서 Timer의 value도 결정  
 
 # TCP : reliable data transfer  
 * 지금까지 배웠던 Approach 적용  
@@ -221,14 +229,12 @@ RTT도 계속 바뀔 수 有
 * Retransmission이 발생하는 경우  
   * timeout event 발생  
   * duplicate acks  
-~~~~
-Q) RTT estimation은 어떻게 이루어질까?  
-A) Exponential Weighted Moving Average 이용  
-(과거 값을 많이 반영할 지, 현재 값을 많이 반영할 지는 a에 의해 결정)  
-~~~~  
 
-* 예측한 RTT 값과 표준편차값을 이용해서 Timer의 value도 결정  
+# TCP ACK generation  
+예제) 1번부터 100번까지 sender에서 receiver에게 보내는 상황 가정  
+* Delayed ACK  
+  * 조금만 기다렸다가 ACK 보내라  
+* Duplicated ACK (총 4개의 ACK)일 경우 loss가 발생한 것으로 알고 재전송  
 
-# Congestion Control  
 
 <b>*the end point*</b>  
