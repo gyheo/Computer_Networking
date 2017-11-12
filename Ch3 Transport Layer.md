@@ -234,7 +234,9 @@ A) Exponential Weighted Moving Average 이용
 예제) 1번부터 100번까지 sender에서 receiver에게 보내는 상황 가정  
 * Delayed ACK  
   * 조금만 기다렸다가 ACK 보내라  
-* Duplicated ACK (총 4개의 ACK)일 경우 loss가 발생한 것으로 알고 재전송  
+* Fast Retransmit  
+  * Duplicated ACK (총 4개의 ACK)일 경우 ACK이 loss된 것으로 이해하고 재전송  
+  * segment가 loss됬을 경우 똑같은 ACK이 계속 오는 현상을 이용한 방법  
 
 
 <b>*the end point*</b>  
