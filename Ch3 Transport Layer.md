@@ -288,14 +288,14 @@ A) Attacker 문제, '확답'을 위해!
 ~~~~  
 clientSocket.close();
 ~~~~  
-Step. 1:  
+* Step. 1:  
   client가 server에게 TCP FIN control segment 전송  
-Step. 2:  
+* Step. 2:  
   server는 FIN을 받고 이에 대한 응답으로 ACK을 client에게 전송  
-Step. 3:  
+* Step. 3:  
   client는 server에게 FIN을 응답 받는다  
     (중요) 몇 초 동안은 buffer를 남겨 둔다 (유실되었을 때를 대비)  
-Step. 4:  
+* Step. 4:  
   server는 client에게 ACK을 받고 connection close  
 
 <b>*the end point*</b>  
