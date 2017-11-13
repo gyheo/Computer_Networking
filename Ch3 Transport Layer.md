@@ -244,5 +244,9 @@ A) Exponential Weighted Moving Average 이용
   * sender가 receiver에게 보낼 때 receiver buffer의 남은 양을 고려해서 데이터 전송  
     * e.g., sender : super-computer / receiver : 386 computer  
 
+# TCP Flow control : how it works?  
+  * receiver가 빈 공간을 포함한 receive window 정보를 hdr에 실어서 sender에게 전송  
+
+
 
 <b>*the end point*</b>  
