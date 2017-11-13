@@ -247,6 +247,20 @@ A) Exponential Weighted Moving Average 이용
 # TCP Flow control : how it works?  
   * receiver가 빈 공간을 포함한 receive window 정보를 hdr에 실어서 sender에게 전송  
 
+# TCP connection Management  
+  * (톺아보기) TCP의 sender와 receiver는 data segment를 주고 받기 전 connection 성립  
+  * TCP 관련 변수 초기화  
+    * seq. #s  
+    * buffer, flow control information  
+  * client : connection initiator  
+  ~~~~
+  Socket clientSocket = new Socket("localhost", 8080);
+  ~~~~  
+  * server : contacted by client  
+  ~~~~
+  Socket connectionSocket = welcomeSocket.accept();
+  ~~~~  
 
+# (Con't) TCP connection Management  
 
 <b>*the end point*</b>  
