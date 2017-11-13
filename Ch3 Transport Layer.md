@@ -275,6 +275,10 @@ A) Exponential Weighted Moving Average 이용
 # Connection Management : handshake
   * client와 server가 서로 data를 주고 받기 전 connection 확보!  
 
+~~~~
+Q) 왜 2-way handshake는 안쓸까?  
+A) Attacker 문제, '확답'을 위해!  
+~~~~  
 
 
 <b>*the end point*</b>  
