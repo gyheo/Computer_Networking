@@ -275,6 +275,9 @@ A) Exponential Weighted Moving Average 이용
 # Connection Management : handshake
   * client와 server가 서로 data를 주고 받기 전 connection 확보!  
 
+# TCP 3-way handshake  
+  * send_buffer, receive_buffer를 만들기 위한 일련의 과정!  
+
 ~~~~
 Q) 왜 2-way handshake는 안쓸까?  
 A) Attacker 문제, '확답'을 위해!  
