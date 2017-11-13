@@ -261,6 +261,20 @@ A) Exponential Weighted Moving Average 이용
   Socket connectionSocket = welcomeSocket.accept();
   ~~~~  
 
-# (Con't) TCP connection Management  
+# (Con't) TCP connection Management ; Three way handshake  
+  * Step. #1 : client host가 TCP SYN segment를 server에게 전송  
+    * initial seq. #  
+    * no data!  
+  * Step. #2 : server는 host에게 SYN을 받은 뒤 client에게 SYN/ACK을 전송  
+    * buffer 공간 확보  
+    * server는 initial seq. #  
+  * Step. #3 : client는 SYN/ACK을 받고 이에 대한 ACK 전송  
+    * 이 때 전송하는 ACK에 전송하고자 하는 DATA(e.g, HTTP request)를 실어서 전송
+      (PiggybACK)  
+
+# Connection Management : handshake
+  * client와 server가 서로 data를 주고 받기 전 connection 확보!  
+
+
 
 <b>*the end point*</b>  
