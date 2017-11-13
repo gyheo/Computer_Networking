@@ -238,5 +238,11 @@ A) Exponential Weighted Moving Average 이용
   * Duplicated ACK (총 4개의 ACK)일 경우 ACK이 loss된 것으로 이해하고 재전송  
   * segment가 loss됬을 경우 똑같은 ACK이 계속 오는 현상을 이용한 방법  
 
+# TCP flow control  
+* TCP Flow control  
+  * receiver side의 buffer 존재  
+  * sender가 receiver에게 보낼 때 receiver buffer의 남은 양을 고려해서 데이터 전송  
+    * e.g., sender : super-computer / receiver : 386 computer  
+
 
 <b>*the end point*</b>  
