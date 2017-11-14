@@ -298,4 +298,13 @@ clientSocket.close();
 * Step. 4:  
   server는 client에게 ACK을 받고 connection close  
 
+# Approaches towards congestion control  
+* End-end congestion control :  
+  * DATA/ACK으로 유추
+    (생각보다 어려움)
+  * TCP에서 이용되는 방법  
+
+*  Network-assited congestion control :  
+  * 중간에 위치한 router buffer status monitoring  
+  * e.g., RED, ECN  
 <b>*the end point*</b>  
