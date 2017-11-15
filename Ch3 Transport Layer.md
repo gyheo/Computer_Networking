@@ -307,4 +307,23 @@ clientSocket.close();
 *  Network-assited congestion control :  
   * 중간에 위치한 router buffer status monitoring  
   * e.g., RED, ECN  
+
+# The TCP Intuition  
+  * 파이프 라인을 떠올리기  
+  * 물을 붓는 사람의 입장에서 생각해보기  
+  * 가장 얇은 두께의 pipe가 throughput을 결정!  
+
+# (진짜 중요) TCP Congestion Control  
+  * Slow Start  
+    * 한 방울, 두 방울 '겸손'하게 시작  
+  * Additive increase  
+    * linear  
+  * Multiplicative decrease  
+    * 1/2  
+
+~~~~
+Q) 왜 이렇게 하는 것일까?  
+A) 네트워크는 우선 '공유' 자원이고 막혔다 싶으면 다 빼는 게 원활!  
+~~~~
+
 <b>*the end point*</b>  
