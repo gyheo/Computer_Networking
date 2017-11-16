@@ -200,7 +200,9 @@ one sender, one receiver(프로세스와 프로세스)
 
 # TCP seq. #'s and  ACKs  
 * Seq. #'s:
-  * byte stream "number" of first byte in segment's data  
+  * Segment data의 byte "stream number"
+  (전체를 segment 단위로 나누는 것은 system engineering 구현상 편의)  
+  
 * ACKs:  
   * seq # of next byte expected from other side  
   * (중요) cumulative ACK  
