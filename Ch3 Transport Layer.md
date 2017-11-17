@@ -328,4 +328,17 @@ Q) 왜 이렇게 하는 것일까?
 A) 네트워크는 우선 '공유' 자원이고 막혔다 싶으면 다 빼는 게 원활!  
 ~~~~
 
+# (Con't) TCP Congestion Control: additive increase, multiplicative decrease  
+  * additive increase : congestion window를 1 MSS만큼 증가
+  * multiplicative decrease : loss가 발생한 경우, congestion window를 절반으로 감소  
+  * congestion window 그래프의 톱니바퀴모양 변화  
+
+# TCP Congestion Control: details  
+  * rate = congestion window / RTT * Bytes/sec  
+  * sender에서 loss가 발생한 경우를 파악하는 방법  
+    1. timer에 의한 timeout  
+    2. loss이후 절반으로 줄어든 congestion window  
+
+
+
 <b>*the end point*</b>  
