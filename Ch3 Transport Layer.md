@@ -337,7 +337,12 @@ A) 네트워크는 우선 '공유' 자원이고 막혔다 싶으면 다 빼는 �
   * rate = congestion window / RTT * Bytes/sec  
   * sender에서 loss가 발생한 경우를 파악하는 방법  
     1. timer에 의한 timeout  
-    2. loss이후 절반으로 줄어든 congestion window  
+    2. loss이후 절반으로 줄어든 congestion window
+
+# TCP Slow Start  
+  * Connection이 시작될 때, Congestion Window = 1  
+  * 실제로 slow하지 않고 connection이 시작되고 exponenetial하게 증가
+    (loss가 발생하기 전까지!)  
 
 
 
