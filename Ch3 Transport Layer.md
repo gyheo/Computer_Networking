@@ -344,6 +344,8 @@ A) 네트워크는 우선 '공유' 자원이고 막혔다 싶으면 다 빼는 �
   * 실제로 slow하지 않고 connection이 시작되고 exponenetial하게 증가
     (loss가 발생하기 전까지!)  
 
+# TCP version  
+
 
 
 <b>*the end point*</b>  
