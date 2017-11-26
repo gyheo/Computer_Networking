@@ -26,6 +26,7 @@ Q) 얼마만큼의 overhead?
 A) 20 bytes of TCP, 20 bytes of IP = 40 bytes + app layer overhead!  
 ~~~~  
 
+# (con't) IP datagram format  
 
 
 <b>*the end point*</b>  
