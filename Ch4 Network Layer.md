@@ -41,6 +41,14 @@ A) Network 상에서 죽을때까지 패킷이 돌아다닐까봐..
 * 주소 중 어디까지가 network ID(=subnet ID, prefix) 인지 표시  
 * (중요) Subnet Mask는 IP address와 늘 같이 따라다닌다  
 
+# IP address allocation 역사  
+
+## Classful Addressing  
+* Class A: 0*, B: 10*, C: 110*에 따라 배분  
+
+## Classless Inter-Domain Routing (CIDR)  
+* host수에 따라 자유롭게 필요한 만큼!  
+
 
 
 
