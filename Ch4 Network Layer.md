@@ -49,6 +49,16 @@ A) Network 상에서 죽을때까지 패킷이 돌아다닐까봐..
 ## Classless Inter-Domain Routing (CIDR)  
 * host수에 따라 자유롭게 필요한 만큼!  
 
+## Longest Prefix Match Forwarding  
+* Destination-based forwarding  
+  * packet은 dest IP address를 가지고 있고,  
+  * Router는 longest prefix matching을 수행  
+  * 자신에게 들어온 packet에 대해 확인하는 작업  
+
+~~~~  
+Q) Forwarding Table entry는 누가 만들까요~?  
+A) by router  
+~~~~  
 
 
 
