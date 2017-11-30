@@ -24,9 +24,24 @@
 ~~~~
 Q) 얼마만큼의 overhead?  
 A) 20 bytes of TCP, 20 bytes of IP = 40 bytes + app layer overhead!  
+Q) TTL?  
+A) Network 상에서 죽을때까지 패킷이 돌아다닐까봐..  
 ~~~~  
 
-# (con't) IP datagram format  
+# IP Address (IPv4)  
+* 32bit 숫자 (이론상 2의 32제곱만큼 IP address를 사용)  
+* interface의 확인이 가능하도록  
+* 8bit씩 끊어서 표시 (12.34.156.6)  
+
+# Hierarchical Addressing: IP prefixes  
+* Network and host positions  
+* 12.34.125.6/24, prefix = 접두  
+
+# Subnet mask  
+* 주소 중 어디까지가 network ID(=subnet ID, prefix) 인지 표시  
+* (중요) Subnet Mask는 IP address와 늘 같이 따라다닌다  
+
+
 
 
 <b>*the end point*</b>  
