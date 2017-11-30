@@ -69,7 +69,7 @@ A) by router
 
 ~~~~
 Q) Router는 IP주소를 가질까?  
-A) 네! (여러개의 subnet에 속한 교집합 [그림 참조])  
+A) 네! (router의 경우 여러개의 subnet에 속한 교집합 [그림 참조])  
 ~~~~
 
 
