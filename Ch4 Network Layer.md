@@ -67,6 +67,10 @@ A) by router
 # (중요) Subnet  
 * Subnet; 같은 prefix를 가진 device의 집합!  
 
+~~~~
+Q) Router는 IP주소를 가질까?  
+A) 네! (여러개의 subnet에 속한 교집합 [그림 참조])  
+~~~~
 
 
 <b>*the end point*</b>  
