@@ -60,6 +60,13 @@ Q) Forwarding Table entry는 누가 만들까요~?
 A) by router  
 ~~~~  
 
+# IP addressing: CIDR  
+* CIDR : Classless InterDomain Routing  
+  * 앞의 접두 prefix 부분 : 현재 자신이 속한 subnet에 대해 알려줌  
+
+# (중요) Subnet  
+* Subnet; 같은 prefix를 가진 device의 집합!  
+
 
 
 <b>*the end point*</b>  
