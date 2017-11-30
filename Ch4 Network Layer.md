@@ -83,4 +83,12 @@ A) 네! (router의 경우 여러개의 subnet에 속한 교집합 [그림 참조
 * 미래를 예측하기 어렵고 섣불리 바꾸기 어렵기 때문에  
 ~~~~  
 
+# Network Address Translation  
+* 하나의 공인 IP address를 여러개의 IP address가 공유할 수 있도록  
+  e.g., 학교, 가정에서의 무선 공유기  
+~~~~
+Q) 왜 NAT를 사용하는 이유?  
+A) IPv4가 슬슬 한계가 와서 NAT의 trick 방식을 이용해 많은 기기들이 public IP를 사용할 수 있도록  
+단, Network가 커지고 관리하기 어려운 부분이 있음  
+~~~~
 <b>*the end point*</b>  
