@@ -90,5 +90,16 @@ A) 네! (router의 경우 여러개의 subnet에 속한 교집합 [그림 참조
 Q) 왜 NAT를 사용하는 이유?  
 A) IPv4가 슬슬 한계가 와서 NAT의 trick 방식을 이용해 많은 기기들이 public IP를 사용할 수 있도록  
 단, Network가 커지고 관리하기 어려운 부분이 있음  
+~~~~  
+
+* IP (host 구분) , Port (host 내부의 프로세스 구분)  
+* NAT translation table에서 port 번호는 내부 사용자를 찾는 용도로 이용  
+
 ~~~~
+Q) NAT안에서 서버를 운영할 수 있을까?  
+A) NO, layer violation, NAT 안에서 서버 사용 X  
+~~~~
+* NAT는 일종의 trick이라 깨끗한 방식은 아니다  
+
+
 <b>*the end point*</b>  
