@@ -111,5 +111,7 @@ DNS : 192.168.1.1 => local name server
 
 # Dynamic Host Configuration Protocol(DHCP)  
 
+# IP 주소를 어떻게 얻을까?  
+
 
 <b>*the end point*</b>  
