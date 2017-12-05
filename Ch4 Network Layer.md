@@ -101,5 +101,15 @@ A) NO, layer violation, NAT 안에서 서버 사용 X
 ~~~~
 * NAT는 일종의 trick이라 깨끗한 방식은 아니다  
 
+* windows에서 ipconfig 입력했을 때,
+~~~~  
+IPv4 주소 : 192.9.3.4 => 내 컴퓨터 주소
+서브넷 마스크 : 255.255.255.0 => prefix의 크기를 표현  
+Gateway Router : 192.168.1.1 => first hop   
+DNS : 192.168.1.1 => local name server  
+~~~~
+
+# Dynamic Host Configuration Protocol(DHCP)  
+
 
 <b>*the end point*</b>  
