@@ -111,7 +111,13 @@ DNS : 192.168.1.1 => local name server
 
 # Dynamic Host Configuration Protocol(DHCP)  
 
-# IP 주소를 어떻게 얻을까?  
+# IP 주소를 어떻게 얻을까?
+* 어디로 이동하든 동적으로 host configuration이 가능하도록  
+* '나그네' 같은 인생 like 떠돌아 다니는 host  
+* 일종의 rental  
+* 보통의 경우에는 DHCP Server를 별도로 두지 않고 Router위에서 DHCP Process를 운영  
+
+
 
 
 <b>*the end point*</b>  
