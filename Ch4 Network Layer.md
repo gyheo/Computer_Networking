@@ -117,7 +117,9 @@ DNS : 192.168.1.1 => local name server
 * 일종의 rental  
 * 보통의 경우에는 DHCP Server를 별도로 두지 않고 Router위에서 DHCP Process를 운영  
 * (중요) 처음에 host가 왔을 때 "아무것도 모르고, 자기가 누군지도 모르고, 서버도 모르고 눈 앞이 캄캄.."  
-* DHCP discover, offer by <b>broadcast</b>
+* DHCP discover, offer by <b>broadcast</b>  
+* 모든 bit가 1인 경우 (255.255.255.255)는 broadcast!  
 
+# IP fragmentation, reassembly  
 
 <b>*the end point*</b>  
