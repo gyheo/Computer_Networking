@@ -121,5 +121,8 @@ DNS : 192.168.1.1 => local name server
 * 모든 bit가 1인 경우 (255.255.255.255)는 broadcast!  
 
 # IP fragmentation, reassembly  
+* 네트워크 링크는 MTU(Max.transfer size를 가지고 있음)  
+* 큰 IP datagram의 경우 fragmented 되어 전송
+* 최종 목적지에서 재조합!  
 
 <b>*the end point*</b>  
