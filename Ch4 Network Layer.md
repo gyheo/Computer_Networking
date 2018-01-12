@@ -125,4 +125,8 @@ DNS : 192.168.1.1 => local name server
 * 큰 IP datagram의 경우 fragmented 되어 전송
 * 최종 목적지에서 재조합!  
 
+# ICMP: internet control message protocol  
+* 해당 목적지 서버까지 도달하는데 얼마나 걸리는지? (control msg를 담아내기 위한)  
+* windows command창에서 tracert 실행해보기-!  
+
 <b>*the end point*</b>  
